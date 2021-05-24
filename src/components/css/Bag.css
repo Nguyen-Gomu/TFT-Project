@@ -1,0 +1,150 @@
+.details{
+    position: relative;
+    max-width: 1090px;
+    width: 100%;
+    margin: 50px 220px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    font-family: 'Cabin', sans-serif;
+}
+
+.details h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.details .bag{
+    position: relative;
+    max-width:715px;
+    width: 100%;
+    height:auto;
+}
+
+.details img{
+    max-width: 150px;
+    height: 150px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.details .bagBox{
+    display: flex;
+    /* max-width: 500px;
+    min-width: 290px;
+    margin:25px;
+    width: 100%; */
+}
+
+.details .bagBox span{
+    position:absolute;
+    top: 22%;
+    right:0;
+    font-size:16px;
+    color: rgb(17, 17, 17);
+}
+
+ .bagBox .row{
+    margin-left:30px;
+}
+
+
+.summary{
+    max-width:340px;
+    width: 100%;
+    height:auto;
+}
+
+.summary h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.summaryBox .subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.summaryBox .ship{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.summaryBox .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-2 .select_size{
+    display: flex;
+}
+
+.row-2 .select_quantity{
+    display: flex;
+    align-items: center;
+}
+
+
+/*.box .row h2{
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.box .row span{
+    color: red;
+}
+
+.box .colors button{
+    width: 120px;
+    height: 48px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+    cursor: pointer;
+    background:#fff;
+
+}
+
+.box .colors button:hover{
+    border: 2px solid #000;
+}
+
+.box p{
+    line-height: 1.5;
+    margin: 15px 0;
+}
+*/
+.cart{
+
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top:20px;
+
+    width: 90%;
+    padding: 18px 24px;
+    border-radius: 30px;    
+} 
+
+

@@ -1,0 +1,76 @@
+.details{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin:50px 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+.details img{
+    max-width: 500px;
+    min-width: 290px;
+    height: 300px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 50px;
+}
+
+.details .box{
+    max-width: 500px;
+    min-width: 290px;
+    margin:25px;
+    width: 100%;
+}
+
+.box .row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.box .row h2{
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.box .row span{
+    color: red;
+}
+
+.box .colors button{
+    width: 120px;
+    height: 48px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+    cursor: pointer;
+    background:#fff;
+
+}
+
+.box .colors button:hover{
+    border: 2px solid #000;
+}
+
+.box p{
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.box .cart{
+
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
+    display: inline-block;
+
+
+    width: 90%;
+    padding: 18px 24px;
+    border-radius: 30px;    
+}
