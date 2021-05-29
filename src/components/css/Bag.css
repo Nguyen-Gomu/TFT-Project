@@ -22,7 +22,7 @@
     height:auto;
 }
 
-.details img{
+.details .img{
     max-width: 150px;
     height: 150px;
     width: 100%;
@@ -33,22 +33,37 @@
 
 .details .bagBox{
     display: flex;
-    /* max-width: 500px;
-    min-width: 290px;
-    margin:25px;
-    width: 100%; */
+    justify-content: space-around;
+
 }
+
 
 .details .bagBox span{
-    position:absolute;
-    top: 22%;
-    right:0;
-    font-size:16px;
-    color: rgb(17, 17, 17);
+    margin-top:25px;
 }
 
- .bagBox .row{
-    margin-left:30px;
+
+.row-2 .select_quantity .count{
+    width: 100%;
+
+    background-color: transparent;
+    border: 1px solid #000;
+
+}
+
+.row-2{
+    display:block;
+}
+
+.row-2 .select_size{
+    display: flex;
+}
+
+.row-2 .select_quantity{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:10px 0;
 }
 
 
@@ -85,53 +100,11 @@
 }
 
 
-.row-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.row-2 .select_size{
-    display: flex;
-}
-
-.row-2 .select_quantity{
-    display: flex;
-    align-items: center;
-}
-
-
-/*.box .row h2{
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-.box .row span{
-    color: red;
-}
-
-.box .colors button{
-    width: 120px;
-    height: 48px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(145, 145, 145);
-    border-radius: 4px;
-    outline: none;
-    margin-right: 5px;
+.delete{
+    margin-top:20px;
     cursor: pointer;
-    background:#fff;
-
 }
 
-.box .colors button:hover{
-    border: 2px solid #000;
-}
-
-.box p{
-    line-height: 1.5;
-    margin: 15px 0;
-}
-*/
 .cart{
 
     background: #111;

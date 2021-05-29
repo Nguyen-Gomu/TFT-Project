@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {Datacontext} from "../Context"
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import '../css/Details.css'
-import Sizes from './SizeDetails'
+import Sizes from './Colors'
 
 export class Details extends Component {
     static contextType = Datacontext;
@@ -30,7 +30,6 @@ export class Details extends Component {
 
     render() {
         const {product} = this.state;
-        const {addBag} = this.context;
         return (
             <>
                 {
@@ -38,14 +37,17 @@ export class Details extends Component {
                         <div className="details" key={item._id}>
                             <img src={item.src} alt="..."/>
                             <div className="box">
-                                <div className="row-detail">
+                                <div className="row">
                                     <h2>{item.title}</h2>
                                     <span>${item.price}</span>
                                 </div>
                                 <Sizes sizes={item.sizes}/>
+
                                 <p>{item.description}</p>
                                 <p>{item.content}</p>
-                                <button onClick={()=> addBag(item._id)} className="cart">Add to cart</button>
+                                <Link to="/bag" className="cart">
+                                    Add to Bag
+                                </Link>
                             </div>
                         </div>
                     ))

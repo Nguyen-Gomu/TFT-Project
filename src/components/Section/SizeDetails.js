@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../css/Details.css'
 
 export class Sizes extends Component {
     render() {
@@ -8,7 +9,7 @@ export class Sizes extends Component {
                 <p>Select Size</p>
                 {
                     sizes.map((size,index) =>(
-                        <button key={index} style={{color:"black"}}>{size}</button>
+                        <button className="btn active" key={index} style={{color:"black"}}>{size}</button>
                     )) 
                 }
             </div>

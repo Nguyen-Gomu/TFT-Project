@@ -8,7 +8,7 @@ export class Products extends Component {
     static contextType = Datacontext;
 
     render() {
-        const {products} = this.context;
+        const {products,addBag} = this.context;
         return (
             <div id="product">
                {
@@ -31,10 +31,9 @@ export class Products extends Component {
                                 <span>
                                       ${product.price}  
                                 </span>
-                                
-                                {/* <button onClick={() => this.context.addBag(product._id)}>
-                                    Add to cart
-                                </button> */}
+
+
+                                <button onClick={()=> addBag(product._id)}>Add to cart</button>
 
                            </div>
                        </div>

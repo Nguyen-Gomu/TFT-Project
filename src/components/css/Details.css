@@ -23,20 +23,10 @@
     width: 100%;
 }
 
-.box .row{
+.row-detail{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
     align-items: center;
-}
-
-.box .row h2{
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-.box .row span{
-    color: red;
 }
 
 .box .colors button{
@@ -56,6 +46,10 @@
     border: 2px solid #000;
 }
 
+.box .colors button:active{
+    border: 1px solid red;
+}
+
 .box p{
     line-height: 1.5;
     margin: 15px 0;
@@ -73,4 +67,11 @@
     width: 90%;
     padding: 18px 24px;
     border-radius: 30px;    
+}
+
+
+@media screen and (min-width:768px){
+    .details{
+        display:block;
+    }
 }

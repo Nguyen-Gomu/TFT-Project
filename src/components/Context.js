@@ -121,26 +121,81 @@ export class DataProvider extends Component {
             }
 
         ],
-        bag:[]
+        bag:[
+
+        ]
+
     };
 
     addBag =(id)=>{
         const {products,bag} = this.state;
-        const data = products.filter(product => {
-            return product._id === id
+        const check = bag.every(item=>{
+            return item._id !== id
         })
-        this.setState({bag: [...bag,...data]});
+        if(check){
+            const data = products.filter(product => {
+                return product._id === id
+            })
+            this.setState({bag: [...bag,...data]});
+        }else{
+            alert("The product has been added to Bag.")
+        }
     }
 
+
+
+    reduction = id => {
+        const {bag} = this.state;
+        bag.forEach(item => {
+            if(item._id===id){
+                item.count===1 ? item.count=1 : item.count-=1;
+            }
+        })
+        this.setState({bag:bag});
+    }
+
+    increase = id => {
+        const {bag} = this.state;
+        bag.forEach(item => {
+            if(item._id===id){
+                item.count === 10 ? alert("het hang") : item.count +=1; 
+            }
+        })
+        this.setState({bag:bag});
+    }
+
+
+    removeProduct = id=>{
+        if(window.confirm("Are you sure ?")){
+            const {bag} = this.state;
+            bag.forEach((item,index)=>{
+                if(item._id === id){
+                    bag.splice(index, 1);
+                }
+            })
+            this.setState({bag:bag});
+            this.getTotal();
+        }
+    }
+
+
+    getTotal = ()=>{
+        const{bag} = this.state;
+        const res = bag.reduce((prev, item) => {
+            return prev + (item.price * item.count);
+        },0)
+        this.setState({total: res})
+    };
+    
 
 
     render() {
 
         const {products,bag} =this.state;
-        const {addBag} = this;
+        const {addBag,removeProduct,getTotal,reduction,increase} = this;
 
         return (
-            <Datacontext.Provider value={{products,addBag,bag}}>
+            <Datacontext.Provider value={{products,addBag,bag,removeProduct,getTotal,reduction,increase}}>
                 {this.props.children}
             </Datacontext.Provider>
         )

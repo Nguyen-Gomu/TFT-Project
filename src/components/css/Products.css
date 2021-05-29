@@ -1,6 +1,7 @@
 #product{
     max-width:1220px;
-    width: 100%;
+    width: auto;
+    min-width:none;
     height:auto;
     margin:20px 150px;
     display: flex;
@@ -17,10 +18,9 @@
     /* transition: 0.5s linear; */
     margin-bottom: 50px;
 }
-.card:hover{
-    /* box-shadow: none; */
+/* .card:hover{
     border: 1px solid #000;
-}
+} */
 .card img{
     max-width: 300px;
     width: 100%;
@@ -60,4 +60,10 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 15px 0;
+}
+
+@media screen and (max-width:860px){
+    #product{
+        margin:20px 50px;
+    }
 }

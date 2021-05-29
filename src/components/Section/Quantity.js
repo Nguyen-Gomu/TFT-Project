@@ -8,8 +8,8 @@ export class SelectQuantity extends Component {
             <div className="size-select">
                 <select>
                 {
-                    quantities.map((size,index) =>(
-                        <option key={index} style={{color:"black"}}>{size}</option>
+                    quantities.map((quantity,index) =>(
+                        <option key={index} style={{color:"black"}}>{quantity}</option>
                     )) 
                 }
                 </select>

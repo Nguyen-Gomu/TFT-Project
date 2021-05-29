@@ -22,7 +22,7 @@ export class Header extends Component {
 
     render() {
         const {toggle} = this.state;
-        const {cart} = this.context;
+        const {bag} = this.context;
         return (
             <header>
                 <div className="nav-icons">
@@ -34,10 +34,11 @@ export class Header extends Component {
                     </div>
                     <nav>
                         <div className="nav-right">
-                            <Link to="/cart">
+                            <span>{bag.length}</span>
+                            <Link to="/bag">
                                 <i class="fas fa-shopping-cart"></i>
                             </Link>
-                            <Link to="/uer">
+                            <Link to="/signin">
                                 <i class="fas fa-user"></i>
                             </Link>
                             <Link to="/search">
@@ -58,20 +59,6 @@ export class Header extends Component {
                         <li><Link to="/login">Used</Link></li>
                     </ul>
                 </nav>
-
-                {/* <nav className={toggle ? "toggle" : ""} >
-                    <ul className="nav-menu">
-                        <li className="close" onClick={this.menuToggle}>
-                            <i class="fas fa-times"></i>
-                        </li>
-                        <li><Link to="/">FEATURES</Link></li>
-                        <li><Link to="/product">Footwear</Link></li>
-                        <li><Link to="/contact">Apparel</Link></li>
-                        <li><Link to="/about">Accessories</Link></li>
-                        <li><Link to="/login">Used</Link></li>
-                    </ul>
-                </nav> */}
-
             </header>
         )
     }

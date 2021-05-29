@@ -9,7 +9,7 @@ export class SelectSizes extends Component {
                 <select>
                 {
                     sizes.map((size,index) =>(
-                        <option key={index} style={{color:"black"}}>{size}</option>
+                        <option key={index}  style={{color:"black"}}>{size}</option>
                     )) 
                 }
                 </select>
