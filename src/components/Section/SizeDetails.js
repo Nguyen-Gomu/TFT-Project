@@ -5,11 +5,11 @@ export class Sizes extends Component {
     render() {
         const {sizes} = this.props;
         return (
-            <div className="colors">
+            <div className="size__css">
                 <p>Select Size</p>
                 {
                     sizes.map((size,index) =>(
-                        <button className="btn active" key={index} style={{color:"black"}}>{size}</button>
+                        <button className="btn" key={index} style={{color:"black"}}>{size}</button>
                     )) 
                 }
             </div>

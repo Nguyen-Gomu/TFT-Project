@@ -37,7 +37,7 @@ export class Details extends Component {
                     product.map(item => (
                         <div className="details" key={item._id}>
                             <img src={item.src} alt="..."/>
-                            <div className="box">
+                            <div className="details__content">
                                 <div className="row-detail">
                                     <h2>{item.title}</h2>
                                     <span>${item.price}</span>

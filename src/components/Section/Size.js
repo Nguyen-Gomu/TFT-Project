@@ -6,7 +6,7 @@ export class SelectSizes extends Component {
         const {sizes} = this.props;
         return (
             <div className="size-select">
-                <select>
+                <select >
                 {
                     sizes.map((size,index) =>(
                         <option key={index}  style={{color:"black"}}>{size}</option>

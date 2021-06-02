@@ -123,7 +123,8 @@ export class DataProvider extends Component {
         ],
         bag:[
 
-        ]
+        ],
+        total:0
 
     };
 
@@ -152,6 +153,7 @@ export class DataProvider extends Component {
             }
         })
         this.setState({bag:bag});
+        this.getTotal();
     }
 
     increase = id => {
@@ -162,6 +164,7 @@ export class DataProvider extends Component {
             }
         })
         this.setState({bag:bag});
+        this.getTotal();
     }
 
 
@@ -186,16 +189,34 @@ export class DataProvider extends Component {
         },0)
         this.setState({total: res})
     };
+
+
+    componentDidUpdate(){
+        localStorage.setItem('dataBag',JSON.stringify(this.state.bag))
+        localStorage.setItem('dataTotal',JSON.stringify(this.state.total))
+    };
+
+    componentDidMount(){
+        const dataBag = JSON.parse(localStorage.getItem('dataBag'));
+        if(dataBag !== null){
+            this.setState({bag:dataBag});
+        }
+
+        const dataTotal = JSON.parse(localStorage.getItem('dataTotal'));
+        if(dataTotal !== null){
+            this.setState({total:dataTotal});
+        }
+    }
     
 
 
     render() {
 
-        const {products,bag} =this.state;
+        const {products,bag,total} =this.state;
         const {addBag,removeProduct,getTotal,reduction,increase} = this;
 
         return (
-            <Datacontext.Provider value={{products,addBag,bag,removeProduct,getTotal,reduction,increase}}>
+            <Datacontext.Provider value={{products,addBag,bag,removeProduct,getTotal,reduction,increase,total}}>
                 {this.props.children}
             </Datacontext.Provider>
         )

@@ -16,7 +16,7 @@
     margin: 50px;
 }
 
-.details .box{
+.details .details__content{
     max-width: 500px;
     min-width: 290px;
     margin:25px;
@@ -29,7 +29,9 @@
     align-items: center;
 }
 
-.box .colors button{
+
+
+.details__content .size__css button{
     width: 120px;
     height: 48px;
     margin-bottom: 10px;
@@ -41,20 +43,21 @@
     background:#fff;
 
 }
-
-.box .colors button:hover{
+/* 
+.details__content .colors button:hover{
     border: 2px solid #000;
 }
 
-.box .colors button:active{
+.details__content .colors button:active{
     border: 1px solid red;
-}
+} */
 
-.box p{
+.details__content p{
     line-height: 1.5;
     margin: 15px 0;
 }
-.box .cart{
+
+.details__content .cart{
 
     background: #111;
     color: #fff;
@@ -70,7 +73,7 @@
 }
 
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
     .details{
         display:block;
     }

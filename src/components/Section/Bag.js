@@ -9,8 +9,12 @@ import SelectQuantity from '../Section/Quantity'
 
 export class Bag extends Component {
     static contextType = Datacontext;
+
+    componentDidMount() {
+        this.context.getTotal();
+    }
     render() {
-        const {bag,removeProduct,reduction,increase}=this.context;
+        const {bag,removeProduct,reduction,increase,total}=this.context;
         if(bag.length===0){
             
             return (<h1 style={{textAlign:"center"}}>Nothings Product</h1>)
@@ -20,51 +24,46 @@ export class Bag extends Component {
                 <>
                     {
                         bag.map(item => (
-                            <div className="details" key={item._id}>
+                            <div className="bag__container" key={item._id}>
                                 <div className="bag">
                                     <h4>Bag</h4>
-                                    <div className="bagBox">  
+                                    <div className="bag__Box">  
                                         <img src={item.src} alt="..."/>
-                                        <div className="bagRow">
-                                            <h2>{item.title}</h2>
-                                            <p>{item.description}</p>
-                                            <p>{item.content}</p>
-                                                
-                                            <div className="row-2">
-                                                
-                                                <div className="select_quantity">
-                                                    <label>Quantity:</label>
-                                                    {/* <SelectQuantity quantities={item.quantities}/> */}
-                                                    <button className="count" onClick={()=>reduction(item._id)}>-</button>
-                                                    <span>{item.count}</span>
-                                                    <button className="count" onClick={()=>increase(item._id)}>+</button>
-                                                </div>
-                                                <div className="select_size">
-                                                    <label>Size:</label>
-                                                    <SelectSizes sizes={item.sizes}/>   
+                                        <div className="bag__Row">
+                                            <div className="bag__Row--content">
+                                                <span className="bag__Box--title">{item.title}</span>
+                                                <p>{item.description}</p>
+                                                <p>{item.content}</p>
+
+                                                <label>Quantity:</label>
+                                                <button className="count" onClick={()=>reduction(item._id)}>-</button>
+                                                <span className="number">{item.count}</span>
+                                                <button className="count" onClick={()=>increase(item._id)}>+</button>
+                                                <div className="select__size">
+                                                <label style={{marginRight:"10px"}}>Size:</label>
+                                                <SelectSizes sizes={item.sizes}/>   
                                                 </div>
                                             </div>
                                             <div className="delete" onClick={() => removeProduct(item._id)}>remove</div>
                                         </div>
-                                        <span>${item.price * item.count}</span>
+                                        <span className="price">${item.price * item.count}</span>
                                     </div>
-                                    <hr/>
                                 </div>
                                 <div className="summary">
                                     <h4>Summary</h4>
-                                    < div className="summaryBox">
-                                        <div className="subtotal">
+                                    < div className="summary__Box">
+                                        <div className="summary__Box--subtotal">
                                             <span>Subtotal</span>
-                                            <p>$.........</p>
+                                            <p>${ total}</p>
                                         </div>
-                                        <div className="ship">
+                                        <div className="summary__Box--ship">
                                             <span>Estimated Delivery & Handling</span>
                                             <p>$.........</p>
                                         </div>
                                         <hr/>
-                                        <div className="total">
+                                        <div className="summary__Box--total">
                                             <span>Total</span>
-                                            <p>$.........</p>
+                                            <p>${total}</p>
                                         </div>
                                         <hr/>
                                         <Link to="/product" className="cart" to="/checkout">
