@@ -11,7 +11,11 @@ export class DataProvider extends Component {
             {
                 "_id":"1",
                 "title":"Nike Jordan 1",
-                "src":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7a0735a2-3926-4e15-9f39-5616ce97c107/air-jordan-7-shoe.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b9bc37ba-c4e3-4fdd-b7c5-f62de33cbbe8/air-jordan-1-mid-shoe-BNc6lg.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f92015c1-2dc1-4e19-bda5-6c97104daacf/air-jordan-1-mid-shoe-BNc6lg.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/c2204e6b-ee95-4f60-8dd5-c1a404376964/air-jordan-1-mid-shoe-BNc6lg.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/83375a1b-0052-496f-9137-0f0d7d6e7454/air-jordan-1-mid-shoe-BNc6lg.png"
+            ],
                 "description":"Description",
                 "content":"Content",
                 "price":23,
@@ -24,7 +28,12 @@ export class DataProvider extends Component {
             {
                 "_id":"2",
                 "title":"Nike Jordan 2",
-                "src":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1589aaae-3b50-4b7c-a74e-066bf4a1c7c0/jordan-why-not-zer03-se-pf-basketball-shoe-rZMTBN.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/070f84af-efa3-4c95-9cbc-dc6c6841c0e3/zion-1-basketball-shoe-bJ0hLJ.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/0a4242ce-1143-4fa1-a148-16dc71edeb67/zion-1-basketball-shoe-bJ0hLJ.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/651a3d1a-e264-4b0e-a7d3-fc58e863d387/zion-1-basketball-shoe-bJ0hLJ.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2f76eaf7-c1e5-45a3-ae7d-c5f6a28a8824/zion-1-basketball-shoe-bJ0hLJ.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/764576b5-6e94-4813-a79c-4370fa1b5062/zion-1-basketball-shoe-bJ0hLJ.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9d4ca92d-75b6-4901-b0d3-9d8cc8044d69/zion-1-basketball-shoe-bJ0hLJ.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -38,7 +47,10 @@ export class DataProvider extends Component {
             {
                 "_id":"3",
                 "title":"Nike Jordan 3",
-                "src":"https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/6a611a8c-55f4-4b8d-94b1-2cdf74040716/zion-1-zna-basketball-shoe-bHGvxg.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/62e3e780-5922-4637-b313-868444cf7151/jordan-adg-3-mens-golf-shoe-CxdNRV.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/19d259a0-7d90-4064-9b72-a00a67a9c820/jordan-adg-3-mens-golf-shoe-CxdNRV.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/86a3b829-4302-47d5-a1a5-4119486f8907/jordan-adg-3-mens-golf-shoe-CxdNRV.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/dc38eaca-ef32-4cb6-a7ed-e75ac60a102b/jordan-adg-3-mens-golf-shoe-CxdNRV.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -52,7 +64,10 @@ export class DataProvider extends Component {
             {
                 "_id":"4",
                 "title":"Nike Jordan 4",
-                "src":"https://static.nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/63a5e8d4-b2dd-4f0a-8861-ec8c864dfddf/jordan-one-take-ii-pf-basketball-shoe-m666jq.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4b394abc-9a8b-4f05-bd0b-3c473f7a6c72/jordan-why-not-zer04-family-basketball-shoe-MkFHlx.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e17599a3-5dff-4866-a35a-45fa79abddad/jordan-why-not-zer04-family-basketball-shoe-MkFHlx.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/935d623f-c8e3-46c9-ad74-6609d78265af/jordan-why-not-zer04-family-basketball-shoe-MkFHlx.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3ef4f27a-24f0-41b5-ab50-9ccfa907685c/jordan-why-not-zer04-family-basketball-shoe-MkFHlx.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -66,7 +81,11 @@ export class DataProvider extends Component {
             {
                 "_id":"5",
                 "title":"Nike Jordan 5",
-                "src":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c334515b-612d-4470-a886-7c3a85bd050d/air-jordan-13-xcK6vg.png",
+                "src":["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d6f66b63-127f-4856-a4ed-2fc54f2aa4d6/jordan-adg-2-mens-golf-shoe-lcbnnm.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/26970b18-e001-4219-afd2-248b861704cd/jordan-adg-2-mens-golf-shoe-lcbnnm.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/12f7423d-2f55-477a-81af-df794ec51559/jordan-adg-2-mens-golf-shoe-lcbnnm.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/621c14bb-f851-407a-9da2-34bb79d69342/jordan-adg-2-mens-golf-shoe-lcbnnm.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/157fbadb-0932-4956-9d37-33a93d063dfa/jordan-adg-2-mens-golf-shoe-lcbnnm.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -80,7 +99,11 @@ export class DataProvider extends Component {
             {
                 "_id":"6",
                 "title":"Nike Jordan 6",
-                "src":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b3d843c9-3b00-4d52-ac78-b83913fda1c4/jordan-ma2-still-loading-shoe-qw1Z6m.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f99a1e42-2e96-4bc9-9a44-ef2985e83dde/jordan-air-cadence-mens-shoe-CCZftP.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/30952408-b811-4cd3-ac64-529ff6ca406e/jordan-air-cadence-mens-shoe-CCZftP.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f5df49db-0498-469c-80b7-7e54d7728ca2/jordan-air-cadence-mens-shoe-CCZftP.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9c8ba8b3-9ff0-405e-82c9-7a96bf848563/jordan-air-cadence-mens-shoe-CCZftP.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/857b02c6-58dc-464d-97b8-1efb9473b408/jordan-air-cadence-mens-shoe-CCZftP.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -94,7 +117,11 @@ export class DataProvider extends Component {
             {
                 "_id":"7",
                 "title":"Nike Jordan 7",
-                "src":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c3c57da5-7511-4340-b8ad-6306ec087356/air-jordan-xxxv-pf-basketball-shoe-QrRrHz.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8e500cf3-a78f-4579-8f45-17050e20317c/jordan-one-take-ii-basketball-shoe-dcsGDx.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/74001d44-7a91-43d5-ba6f-4c481ded4738/jordan-one-take-ii-basketball-shoe-dcsGDx.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/53cccc64-e1b3-4ece-b573-a68d3628fb49/jordan-one-take-ii-basketball-shoe-dcsGDx.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2de91ea0-7d6a-46e9-8248-429cf43d887a/jordan-one-take-ii-basketball-shoe-dcsGDx.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/87e6f840-bd4f-4c5f-bc6a-0354c9bfaaf4/jordan-one-take-ii-basketball-shoe-dcsGDx.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -108,7 +135,10 @@ export class DataProvider extends Component {
             {
                 "_id":"8",
                 "title":"Nike Jordan 8",
-                "src":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4869db67-36f8-4352-90b9-de762256d4f2/jordan-react-elevation-pf-basketball-shoe-WhWgxz.png",
+                "src":["https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/47922912-39af-49e3-ac43-d11aac1ac7ba/air-jordan-1-mid-shoe-nwV1GK.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/b1defe9a-c870-4b09-9f60-38abf5572d8a/air-jordan-1-mid-shoe-nwV1GK.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/98065153-663f-41e3-9424-a70bc08f989d/air-jordan-1-mid-shoe-nwV1GK.png",
+                    "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/1f70fb23-c76e-407b-90e8-ec7e43e6356c/air-jordan-1-mid-shoe-nwV1GK.png"],
                 "description":"description",
                 "content":"content",
                 "price":23,
@@ -127,6 +157,16 @@ export class DataProvider extends Component {
         total:0
 
     };
+
+    // select images - page detail products (start)
+
+    
+  
+    // componentDidMount(){
+        // const {index} = this.state;
+        // this.myRef.current.children[index].className = "active";
+    // }
+    // end
 
     addBag =(id)=>{
         const {products,bag} = this.state;

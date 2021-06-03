@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import {Datacontext} from "../Context"
 import {Link} from "react-router-dom"
 import '../css/Bag.css'
-// import Sizes from './SizeDetails'
 
 import SelectSizes from '../Section/Size'
-import SelectQuantity from '../Section/Quantity'
 
 export class Bag extends Component {
     static contextType = Datacontext;
@@ -28,7 +26,7 @@ export class Bag extends Component {
                                 <div className="bag">
                                     <h4>Bag</h4>
                                     <div className="bag__Box">  
-                                        <img src={item.src} alt="..."/>
+                                        <img src={item.src[0]} alt="..."/>
                                         <div className="bag__Row">
                                             <div className="bag__Row--content">
                                                 <span className="bag__Box--title">{item.title}</span>
@@ -77,7 +75,7 @@ export class Bag extends Component {
                 </>
             )
         }
-        }
+    }
         
 }
 

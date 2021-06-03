@@ -5,7 +5,7 @@ import {DataProvider} from './components/Context'
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import ImageSlider from './components/Slider/ImageSlider'
+
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Router>
           <Header/>
           <Section/>
-          <Footer/>
+          {/* <Footer/> */}
         </Router>
       </div>
     </DataProvider>

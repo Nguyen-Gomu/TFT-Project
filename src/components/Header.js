@@ -25,40 +25,101 @@ export class Header extends Component {
         const {bag} = this.context;
         return (
             <header>
-                <div className="nav-icons">
-                    <div className="menu" onClick={this.menuToggle}>
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div className="logo">
-                        <h1><Link to="/">PK-K</Link></h1>
-                    </div>
-                    <nav>
-                        <div className="nav-right">
-                            <span>{bag.length}</span>
-                            <Link to="/bag">
-                                <i class="fas fa-shopping-cart"></i>
-                            </Link>
-                            <Link to="/signin">
-                                <i class="fas fa-user"></i>
-                            </Link>
-                            <Link to="/search">
-                                <i class="fas fa-search"></i>
-                            </Link>
+                <div className="header__container">
+                    <div className="nav-icons">
+                        <div className="menu" onClick={this.menuToggle}>
+                            <i class="fas fa-bars"></i>
                         </div>
+                        <div className="logo">
+                            <h1><Link to="/">PK-K</Link></h1>
+                        </div>
+                        <nav>
+                            <div className="nav-right">
+                                <span>{bag.length}</span>
+                                <Link to="/bag">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </Link>
+                                <Link to="/signin">
+                                    <i class="fas fa-user"></i>
+                                </Link>
+                                <Link to="/search">
+                                    <i class="fas fa-search"></i>
+                                </Link>
+                            </div>
+                        </nav>
+                    </div>
+                    <nav className="nav-menu">
+                        <ul className={toggle ? "toggle" : ""}>
+                            <li className="close" onClick={this.menuToggle}>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li><Link to="/">FEATURES</Link></li>
+                            <li>
+                                <Link to="/product" id="footwear">Footwear</Link>
+                                <div className="menu__sub">
+                                    <ul>
+                                        <li><Link to="/">Newest Sneakers</Link></li>
+                                        <li><Link to="/">Lifestyle</Link></li>
+                                        <li><Link to="/">Running</Link></li>
+                                        <li><Link to="/">Basketball</Link></li>
+                                        <li><Link to="/">Gym & Training</Link></li>
+                                        <li><Link to="/">Sandal</Link></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <Link to="/contact">Apparel</Link>
+                                <div className="menu__sub">
+                                    <ul>
+                                        <li><Link to="/">CONIC®</Link></li>
+                                        <li><Link to="/">Hoodies</Link></li>
+                                        <li><Link to="/">Shorts</Link></li>    
+                                        <li><Link to="/">Pants</Link></li>
+                                        <li><Link to="/">Outerwears</Link></li>
+                                        <li><Link to="/">Tees</Link></li>
+                                        <li><Link to="/">Shirts</Link></li>
+                                        <li><Link to="/">Jackets</Link></li>
+                                        <li><Link to="/">Sweaters</Link></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <Link to="/about">Accessories</Link>
+                                <div className="menu__sub">
+                                    <ul>
+                                        <li><Link to="/">Watch</Link></li>
+                                        <li><Link to="/">Socks</Link></li>
+                                        <li><Link to="/">Cap</Link></li>    
+                                        <li><Link to="/">Backpack and Bag</Link></li>
+                                        <li><Link to="/">Shoe Care</Link></li>
+                                        <li><Link to="/">Glasses</Link></li>
+                                        <li><Link to="/">Miscellaneous</Link></li>
+                                        <li><Link to="/">Bearbricks</Link></li>
+                                        <li><Link to="/">Face Mask</Link></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><Link to="/login">Used</Link></li>
+                        </ul>
                     </nav>
                 </div>
-                <nav className="nav-menu">
-                    <ul className={toggle ? "toggle" : ""}>
-                        <li className="close" onClick={this.menuToggle}>
-                            <i class="fas fa-times"></i>
-                        </li>
-                        <li><Link to="/">FEATURES</Link></li>
-                        <li><Link to="/product">Footwear</Link></li>
-                        <li><Link to="/contact">Apparel</Link></li>
-                        <li><Link to="/about">Accessories</Link></li>
-                        <li><Link to="/login">Used</Link></li>
-                    </ul>
-                </nav>
+                {/* <div className="menu__sub">
+                    <div className="menu__sub--top">
+                        <ul>
+                            <li><Link to="/">Newest Sneakers</Link></li>
+                            <li><Link to="/">Lifestyle</Link></li>
+                            <li><Link to="/">Running</Link></li>
+                        </ul>
+                    </div>
+                    <div className="menu__sub--bottom">
+                        <ul>
+                            <li><Link to="/">Basketball</Link></li>
+                            <li><Link to="/">Gym & Training</Link></li>
+                            <li><Link to="/">Sandal</Link></li>
+                        </ul>
+                    </div>
+                
+                </div> */}
             </header>
         )
     }
