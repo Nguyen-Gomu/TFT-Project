@@ -32,7 +32,6 @@ export class Bag extends Component {
                                                 <span className="bag__Box--title">{item.title}</span>
                                                 <p>{item.description}</p>
                                                 <p>{item.content}</p>
-
                                                 <label>Quantity:</label>
                                                 <button className="count" onClick={()=>reduction(item._id)}>-</button>
                                                 <span className="number">{item.count}</span>

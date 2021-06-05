@@ -42,7 +42,7 @@ export class Header extends Component {
                                 <Link to="/signin">
                                     <i class="fas fa-user"></i>
                                 </Link>
-                                <Link to="/search">
+                                <Link to="/" onClick={this.menuToggle}>
                                     <i class="fas fa-search"></i>
                                 </Link>
                             </div>
@@ -103,23 +103,19 @@ export class Header extends Component {
                         </ul>
                     </nav>
                 </div>
-                {/* <div className="menu__sub">
-                    <div className="menu__sub--top">
-                        <ul>
-                            <li><Link to="/">Newest Sneakers</Link></li>
-                            <li><Link to="/">Lifestyle</Link></li>
-                            <li><Link to="/">Running</Link></li>
-                        </ul>
+                <div className={toggle ? "toggle" : ""}>
+                    <div className="Search__right">
+                        <div className="text__right">
+                            <span id="close__icon" onClick={this.menuToggle}><i class="fas fa-times"></i></span>
+                        </div>
+                        <form className="search__form">
+                            <input type="text" className="ipt__search" placeholder="Search"></input>
+                            <button className="arrow__left">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                        </form>
                     </div>
-                    <div className="menu__sub--bottom">
-                        <ul>
-                            <li><Link to="/">Basketball</Link></li>
-                            <li><Link to="/">Gym & Training</Link></li>
-                            <li><Link to="/">Sandal</Link></li>
-                        </ul>
-                    </div>
-                
-                </div> */}
+                </div>
             </header>
         )
     }

@@ -16,8 +16,8 @@ export class DataProvider extends Component {
                 "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/c2204e6b-ee95-4f60-8dd5-c1a404376964/air-jordan-1-mid-shoe-BNc6lg.png",
                 "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/83375a1b-0052-496f-9137-0f0d7d6e7454/air-jordan-1-mid-shoe-BNc6lg.png"
             ],
-                "description":"Description",
-                "content":"Content",
+                "description":"description",
+                "content":"Style: CW1648-004",
                 "price":23,
                 "kind":"Shoes",
                 "sizes": ["EU 40", "EU 40.5", "EU 41", "EU 42","EU 42.5","EU 43","EU 44","EU 44.5","EU 45","EU 45.5","EU 46","EU 47.5"],

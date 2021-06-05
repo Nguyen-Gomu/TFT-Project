@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
     height:auto;
     padding:50px 215px;
     font-family: 'Cabin', sans-serif;
@@ -10,6 +9,7 @@
 
 .bag__container .bag{
     max-width:700px;
+    min-width: 500px;
     width: 100%;
     height:auto;
     display:block;
@@ -24,11 +24,8 @@
     display:flex;
 }
 
-/* 16px ,,, 8px */
-
 .bag .bag__Box img{
     max-width:150px;
-    max-width: 150px;
     height:150px;
     padding:0px 16px 0px 0px;
 }
