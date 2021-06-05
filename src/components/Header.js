@@ -5,6 +5,10 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import './css/Header.css'
 import {Datacontext} from "./Context"
+import nike0 from "../assets/images/nike0.jpg"
+import nike1 from "../assets/images/nike1.jpg"
+import nike2 from "../assets/images/nike2.jpg"
+import "./css/SliderShow.css"
 
 
 
@@ -103,6 +107,13 @@ export class Header extends Component {
                         </ul>
                     </nav>
                 </div>
+                <div id="slider">
+		            <figure>
+			            <img src={nike0}></img>
+			            <img src={nike1}></img>
+			            <img src={nike2}></img>
+	            	</figure>
+	            </div>
                 {/* <div className="menu__sub">
                     <div className="menu__sub--top">
                         <ul>
