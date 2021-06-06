@@ -56,6 +56,7 @@ header .nav-icons{
 
 .nav-menu{
     position: static;
+    padding:10px;
 }
 
 .nav-menu ul {
@@ -100,7 +101,7 @@ header .nav-icons{
 
 .menu__sub{
     position:absolute;
-    top:80px;
+    top:100px;
     left: 0;
     width: 100%;
     height: auto;
