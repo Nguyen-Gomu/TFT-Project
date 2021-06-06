@@ -100,7 +100,7 @@ header .nav-icons{
 
 .menu__sub{
     position:absolute;
-    top:87px;
+    top:80px;
     left: 0;
     width: 100%;
     height: auto;
@@ -139,68 +139,6 @@ header .nav-icons{
 
 .nav-menu li:hover a ~ .menu__sub{
     display:block;
-}
-
-
-.Search__right{
-    position: fixed;
-    top: 0;
-    right: -18px;
-    background-color: #fff;
-    width: 393px;
-    z-index: 99;
-    height: 100%;
-    padding: 90px 15px 0;
-    display: none;
-    overflow-y: scroll;
-}
-
-.text-right{
-    position: relative;
-}
-
-
-.Search__right #close__icon{
-    padding: 5px;
-    font-size: 20px;
-    font-weight: 700;
-    position: relative;
-    right: -340px;
-    color: #000;
-}
-
-.search__form{
-    position: relative;
-    display: block;
-    margin-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
- input{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border:none;
-    border-bottom:1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size:16px;
-}
-
-input:active{
-    border:none;
-}
-.arrow__left {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    border: none;
-    background: none;
-    padding: 8px 10px;
-    font-size:20px;
-    cursor: pointer;
 }
 
 

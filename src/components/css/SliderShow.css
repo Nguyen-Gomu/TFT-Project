@@ -1,0 +1,30 @@
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	25% {
+		left: 0;
+	}
+	50% {
+		left: -100%;
+	}
+	75% {
+		left: -200%;
+	}
+}
+
+
+
+/* khoa */

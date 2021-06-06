@@ -6,6 +6,12 @@ import {Link} from 'react-router-dom'
 import './css/Header.css'
 import {Datacontext} from "./Context"
 
+// import nike0 from "../assets/images/nike0.jpg"
+// import nike1 from "../assets/images/nike1.jpg"
+// import nike2 from "../assets/images/nike2.jpg"
+
+import "./css/SliderShow.css"
+
 
 
 export class Header extends Component {
@@ -103,19 +109,13 @@ export class Header extends Component {
                         </ul>
                     </nav>
                 </div>
-                <div className={toggle ? "toggle" : ""}>
-                    <div className="Search__right">
-                        <div className="text__right">
-                            <span id="close__icon" onClick={this.menuToggle}><i class="fas fa-times"></i></span>
-                        </div>
-                        <form className="search__form">
-                            <input type="text" className="ipt__search" placeholder="Search"></input>
-                            <button className="arrow__left">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                {/* <div id="slider">
+		            <figure>
+			            <img src={nike0}></img>
+			            <img src={nike1}></img>
+			            <img src={nike2}></img>
+	            	</figure>
+	            </div> */}
             </header>
         )
     }
