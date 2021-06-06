@@ -31,14 +31,14 @@ export class MainPage extends Component{
                                 <h1 className="hero__title">Shoes</h1>
                                 <Link href="/" className="button">Shop</Link>
                             </div>
-                            <img src={shoe} alt="" className="hero__img"/>
+                            <Link href="/"><img src={shoe} alt="" className="hero__img"/></Link>
                         </div>
                         <div className="hero__left">
                             <div className="hero__data--left">
                                 <h1 className="hero__title">clothes</h1>
                                 <Link href="/" className="button-right">Shop</Link>
                             </div>
-                            <img src={clothing} alt="" className="hero__img"/>
+                            <Link href="/"><img src={clothing} alt="" className="hero__img"/></Link>
                         </div>
                         
                     </div>

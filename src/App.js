@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Router>
           <Header/>
-          {/* <Section/> */}
+          <Section/>
           <MainPage/>
           <Footer/>
         </Router>
