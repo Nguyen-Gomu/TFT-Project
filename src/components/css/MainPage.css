@@ -12,12 +12,15 @@
     left: 0;
     top: 0;
     padding:40px 0;
+    width: 100%;
 }
 
 .home__data {
     position:absolute;
     bottom:10%;
     left:5%;
+    width: 100%;
+    height:auto;
 }
 
 .home__title {
@@ -36,6 +39,7 @@
 
 .home__img {
     width: 100%;
+    height:auto;
 }
 
 .button {
@@ -53,11 +57,35 @@
     background-color: #d1d1d1;
 }
 
+
+@media screen and (max-width:768px){
+    .home__title{
+        align-self: center;
+        font-size: 1.5rem;
+        line-height: 1;
+        letter-spacing: .5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .home__data .button{
+        margin-bottom:1rem;
+    }
+}
+
+
+@media screen and (max-width:520px){
+    .home__description{
+        display:none;
+    }
+}
+
 /* HERO CSS */
 
 .hero{
     padding-top:40px;
     position: relative;
+    width: 100%;
+    height:auto;
 }
 
 .hero__container{
@@ -84,10 +112,11 @@
 
 
 .hero__title {
-
+/*  */
 }
 
 .hero__img {
+    max-width: 100%;
     width: 696px;
     height:auto;
     object-fit: cover;
@@ -107,4 +136,106 @@
 .button-right:hover {
     background-color: #d1d1d1;
     color: #000;
+}
+
+@media screen and (max-width:768px){
+    .hero__container{
+        display:block;
+    }
+
+    .hero__data--right{
+        position: absolute;
+        top: 42%;
+        left: 40%;
+    }
+}
+
+/* List Product */
+
+.product h1{
+    text-align: center;
+    padding:40px;
+}
+
+/* Kind product */
+
+.kind{
+    margin-top:40px;
+    width: 100%;
+    height:auto;
+}
+
+
+
+.kind__data{
+    display:flex;
+    justify-content: space-between;
+}
+
+.kind__img{
+    max-width:100%;
+    width:458px;
+    height:auto;
+}
+
+.kind__description{
+    color: #000;
+    font-size:1.2rem;
+}
+
+@media screen and (max-width:768px){
+    .kind__data{
+        display:block;
+    }
+    .kind__img{
+        width: 100%;
+    }
+
+    .kind__description{
+        color: #000;
+    }
+}
+
+/* WHO */
+
+.who{
+    margin-top:40px;
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+
+.who__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.who__right,.who__left{
+    position: relative;
+}
+
+.who__img{
+    max-width: 100%;
+    width: 696px;
+    height:auto;
+    object-fit: cover;
+    background-color: rgba(255,255,255,0.2);
+}
+.who p{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    font-weight: bold;
+    color: #fff;
+    font-size:2rem;   
+}
+
+
+@media screen and (max-width:768px){
+    .who__container{
+        display:block;
+    }
+    .who__img{
+        width: 100%;
+    }
 }

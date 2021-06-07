@@ -5,6 +5,7 @@ footer{
     padding-top: 35px;
     padding-bottom: 45px;
     text-align: center;
+    width: 100%;
 }
 
 .logo-footer  a{
@@ -59,7 +60,7 @@ footer{
 @media screen and (max-width: 768px){
 
     footer{
-        padding-right:20px;
+        width: 100%;
     }
     .row{
         display: flex;

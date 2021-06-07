@@ -16,7 +16,6 @@ export class Products extends Component {
                        <div className="card" key={product._id}>
                            <Link to={`/product/${product._id}`}>
                                <img src={product.src[0]} alt=""/>
-                               
                            </Link>
                            <div className="content">
                                 
