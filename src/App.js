@@ -7,13 +7,14 @@ import Footer from './components/Footer';
 
 
 
+
 function App() {
   return (
     <DataProvider>
       <div className="App">
         <Router>
           <Header/>
-          {/* <Section/> */}
+          <Section/>
           <Footer/>
         </Router>
       </div>

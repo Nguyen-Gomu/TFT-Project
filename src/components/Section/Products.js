@@ -18,7 +18,6 @@ export class Products extends Component {
                                <img src={product.src[0]} alt=""/>
                            </Link>
                            <div className="content">
-                                
                                 <h3>
                                     <Link to ={`/product/${product._id}`}>{product.title}</Link>
                                 </h3> 
@@ -31,10 +30,7 @@ export class Products extends Component {
                                 <span>
                                       ${product.price}  
                                 </span>
-
-
                                 <button onClick={()=> addBag(product._id)}>Add to cart</button>
-
                            </div>
                        </div>
                    ))
