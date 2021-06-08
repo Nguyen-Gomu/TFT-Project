@@ -1,4 +1,4 @@
-const Product = require('../../models/productModel');
+const Product = require('../../models/Product/productModel');
 
 const CreateProduct = function(req, res, next){
     const product = new Product(req.body);
@@ -33,11 +33,15 @@ const SelectProduct = function(req, res, next){
 const UpdateProduct = function(req, res, next){
     var data = {
         name: req.body.name,
+        gender: req.body.gender,
         brand: req.body.brand,
+        content: req.body.content,
         price: req.body.price,
-        img: req.body.img,
+        skind: req.body.skind,
+        img_link: req.body.img_link,
+        count: req.body.count,
         size: req.body.size,
-        color: req.body.color
+        type: req.body.type
     }
     Product.findByIdAndUpdate(req.params.id, data, function(err){
         if (err){

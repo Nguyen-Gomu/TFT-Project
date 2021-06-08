@@ -12,7 +12,7 @@ const userSchema = new schema({
         type: String
     },
     phone: {
-        type: String
+        type: Array
     }
 }, {timestamps: true});
 

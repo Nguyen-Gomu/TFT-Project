@@ -5,19 +5,31 @@ const productSchema = new schema({
     name: {
         type: String
     },
+    gender: {
+        type: String
+    },
     brand: {
+        type: String
+    },
+    content: {
         type: String
     },
     price: {
         type: String
     },
-    img: {
+    skind: {
+        type: String
+    },
+    src: {
+        type: Array
+    },
+    count: {
         type: String
     },
     size: {
-        type: String
+        type: Array
     },
-    color: {
+    type: {
         type: String
     }
 }, {timestamps: true});
